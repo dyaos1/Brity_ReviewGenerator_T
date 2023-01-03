@@ -1,0 +1,30 @@
+﻿/**
+*
+* @libraryType JavaScript
+* @id 1ed6c7bf-4684-480c-9a88-1c7ea6eccc85
+* @createdDate 2023-01-03 15:32:19
+* @lastModifiedDate 2023-01-03 15:34:29
+* @createdBy 
+* @lastModifiedBy 
+*
+* @designerVersion 2.5.000.00921
+* @brief 
+*  @brf 끝 자음을 확인하여 T/F를 반환합니다.
+* @param value<Any> 
+*
+*/
+
+if(Script.JavaScript == undefined || Script.JavaScript == null) {
+	Script.JavaScript = new Object();
+}
+
+if(Script.JavaScript.C_ConsonantCheck == null || Script.JavaScript.C_ConsonantCheck == undefined) {
+	Script.JavaScript.C_ConsonantCheck = function (value) {
+	//Body Begin
+		var finalChrCode = value.charCodeAt(value.length - 1);
+		    // 0 = 받침 없음, 그 외 = 받침 있음
+		var finalConsonantCode = (finalChrCode - 44032) % 28;
+		return (finalConsonantCode !== 0);
+	//Body End
+	}
+}

@@ -1,0 +1,404 @@
+<Process id="789c9201-6b18-40d7-a97d-f5dab165e348" type="process" workType="foreground" name="MyProcess" version="" designerVersion="2.5.000.00921" lastPublishedServer="" readonly="false" isValid="true" DesignedBy="Designer" Template="">
+  <Properties>
+    <Property key="Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="default process" enabled="True" />
+    <Property key="onBefore" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onAfter" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="Timeout" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="0" />
+    <Property key="RunningTime" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="20" />
+    <Property key="Os" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="Microsoft Windows 10 Pro64비트" />
+    <Property key="Resolution" controlType="String" valueType="System.String" formatType="String_Size" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="1920x1080" />
+    <Property key="CreatedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="2023-01-03 15:17:54" />
+    <Property key="CreatedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+    <Property key="LastModifiedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="2023-01-03 15:55:07" />
+    <Property key="LastModifiedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="" />
+    <Property key="LastPublishedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+    <Property key="LastPublishedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+  </Properties>
+  <LinkItems />
+  <Variables>
+    <Variable name="foodName" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+    <Variable name="storeName" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+    <Variable name="resultText" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+    <Variable name="mention1Arr" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+    <Variable name="mention1" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+    <Variable name="mention2" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+    <Variable name="mention2Arr" scope="Normal" valueType="Any" formatType="Any" initValue="" desc="" />
+  </Variables>
+  <Steps>
+    <Step id="S5c7a2542f02842198de6409ace1c76ea" ver="250220822" createVer="250220822" type="Flow" name="Assign" dpName="Assign" dpValue="this.mention1Arr" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="928a7afa-a97b-4d1d-9566-b50c98c72661" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Variable" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.mention1Arr" />
+        <Property type="Flow" key="Conditions_Value" controlType="PropertyItemTextView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="[' 이용해 주셔서 감사합니다. ', ' 사랑해주셔서 감사합니다. ', ' 고객을 위해 정성을 다합니다. ']" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.mention1Arr = [' 이용해 주셔서 감사합니다. ', ' 사랑해주셔서 감사합니다. ', ' 고객을 위해 정성을 다합니다. '];]]></Script>
+    </Step>
+    <Step id="S34ca831e6c914188a90c03e5f1c9ae2b" ver="250220822" createVer="250220822" type="Flow" name="CustomLibrary" dpName="CustomLibrary" dpValue="RESULT" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="0753a251-b676-4b0c-89ab-5fb029dda818" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_LibraryScope" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="Project" />
+        <Property type="Flow" key="Conditions_LibraryNamespace" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="JavaScript" />
+        <Property type="Flow" key="Conditions_LibraryName" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="C_Random" />
+        <Property type="Flow" key="Conditions_LibraryType" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="JavaScript" />
+        <Property type="Flow" key="Conditions_Result" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="RESULT" />
+        <Property type="Flow" key="Arguments_value" controlType="Object" valueType="System.Object" formatType="Any" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.mention1Arr" order="1" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[RESULT = Script.JavaScript.C_Random(this.mention1Arr);]]></Script>
+    </Step>
+    <Step id="S777d27cee2954f61b9f66d88103abba3" ver="250220822" createVer="250220822" type="Flow" name="Assign" dpName="Assign" dpValue="this.mention1" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="84811408-bd77-448d-b1a2-e377410f2503" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Variable" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.mention1" />
+        <Property type="Flow" key="Conditions_Value" controlType="PropertyItemTextView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.mention1Arr[RESULT]" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.mention1 = this.mention1Arr[RESULT];]]></Script>
+    </Step>
+    <Step id="S39e3e4ae839f4bdc91af03599d2f45b8" ver="250220822" createVer="250220822" type="Flow" name="Assign" dpName="Assign" dpValue="this.mention2Arr" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="928a7afa-a97b-4d1d-9566-b50c98c72661" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Variable" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.mention2Arr" />
+        <Property type="Flow" key="Conditions_Value" controlType="PropertyItemTextView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="[' 저희 가게에서 가장 인기있는 메뉴입니다. 다음에도 또 이용해주시면 감사하겠습니다', ' 매력에 빠지면 헤어나오기 힘든 별미 중의 별미입니다! 생각나면 다시 들러주세요!!']" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.mention2Arr = [' 저희 가게에서 가장 인기있는 메뉴입니다. 다음에도 또 이용해주시면 감사하겠습니다', ' 매력에 빠지면 헤어나오기 힘든 별미 중의 별미입니다! 생각나면 다시 들러주세요!!'];]]></Script>
+    </Step>
+    <Step id="S266a493e05504d84a07e69ebc5a07b94" ver="250220822" createVer="250220822" type="Flow" name="CustomLibrary" dpName="CustomLibrary" dpValue="RESULT" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="0753a251-b676-4b0c-89ab-5fb029dda818" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_LibraryScope" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="Project" />
+        <Property type="Flow" key="Conditions_LibraryNamespace" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="JavaScript" />
+        <Property type="Flow" key="Conditions_LibraryName" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="C_Random" />
+        <Property type="Flow" key="Conditions_LibraryType" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="JavaScript" />
+        <Property type="Flow" key="Conditions_Result" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="RESULT" />
+        <Property type="Flow" key="Arguments_value" controlType="Object" valueType="System.Object" formatType="Any" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.mention2Arr" order="1" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[RESULT = Script.JavaScript.C_Random(this.mention2Arr);]]></Script>
+    </Step>
+    <Step id="S64369564ff7f43499646f393416add4d" ver="250220822" createVer="250220822" type="Flow" name="Assign" dpName="Assign" dpValue="this.mention2" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="2b679a21-cb74-4805-b1d9-2fb2ba1c915f" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Variable" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.mention2" />
+        <Property type="Flow" key="Conditions_Value" controlType="PropertyItemTextView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.mention2Arr[RESULT]" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.mention2 = this.mention2Arr[RESULT];]]></Script>
+    </Step>
+    <Step id="S3dc317fabc6f4680bc787391571f25e5" ver="250220822" createVer="250220822" type="Desktop" name="InputBox" dpName="InputBox" dpValue="this.storeName" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="9c309139-434e-4e96-b9d9-e5cd9dcea415" type="Desktop">
+        <Property type="Desktop" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Desktop" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Desktop" key="Conditions_Variable" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.storeName" />
+        <Property type="Desktop" key="Conditions_PromptType" controlType="PropertyItemDropDownView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="Text" valuelist="OK;OK/Cancel;Yes/No;Yes/No/Cancel;Abort/Retry/Ignore;Retry/Cancel;Text" />
+        <Property type="Desktop" key="Conditions_DefaultValue" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="''" />
+        <Property type="Desktop" key="Conditions_DefaultItem" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="''" />
+        <Property type="Desktop" key="Conditions_PromptMessage" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="'음식점 상호명을 써주세요'" />
+        <Property type="Desktop" key="Conditions_TimeoutSec" controlType="Int32" valueType="System.Int32" formatType="Integer" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="600" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.storeName = InputBox('','Text', '음식점 상호명을 써주세요', 600);]]></Script>
+    </Step>
+    <Step id="Saea29c56dc08402c8e4de5c01fed70bf" ver="250220822" createVer="250220822" type="Flow" name="CustomLibrary" dpName="CustomLibrary" dpValue="RESULT" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="8aa59ad3-3a21-494f-9b13-627e5570a283" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_LibraryScope" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="Project" />
+        <Property type="Flow" key="Conditions_LibraryNamespace" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="JavaScript" />
+        <Property type="Flow" key="Conditions_LibraryName" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="C_ConsonantCheck" />
+        <Property type="Flow" key="Conditions_LibraryType" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="JavaScript" />
+        <Property type="Flow" key="Conditions_Result" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="RESULT" />
+        <Property type="Flow" key="Arguments_value" controlType="String" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.storeName" order="1" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[RESULT = Script.JavaScript.C_ConsonantCheck(this.storeName);]]></Script>
+    </Step>
+    <Step id="S18c0549f314b43978ea4c1eaa954eaba" ver="250220822" createVer="250220822" type="Flow" name="Decision" dpName="IfElse" dpValue="RESULT == true" dpValue2="" dpImage="" tag="" depth="1" stmttype="OpenBlock" enabled="True" mainSet="0">
+      <Properties id="38f3d966-73da-40c7-b44a-2effa05aae75" type="Flow">
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Expression" controlType="PropertyItemTextEditorView" valueType="System.Object" formatType="Condition" required="True" visible="False" readonly="True" encrypted="False" isChanged="N" value="RESULT == true" order="1" />
+        <Property type="Flow" key="Conditions_CombineCondition" controlType="PropertyItemCombineConditionView" valueType="System.Boolean" formatType="Boolean" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="True" order="2" />
+        <Property type="Flow" key="Conditions_Expression1" controlType="PropertyItemExpressionView" valueType="System.Object" formatType="Condition" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="RESULT == true" order="3" />
+        <Property type="Flow" key="Conditions_AddCondition" controlType="PropertyItemAddConditionView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+      </Properties>
+      <RelatedSteps>
+        <RelatedStep id="Sf5f2c6f9336d469d99d790d22f453e06" type="Flow" name="Else" />
+        <RelatedStep id="S250567bf1ad3480f94d092269e0c13a0" type="Flow" name="EndDecision" />
+      </RelatedSteps>
+      <Script><![CDATA[if (RESULT == true) {]]></Script>
+    </Step>
+    <Step id="Sc5042bd0d96d44db9849294eaf1d3172" ver="250220822" createVer="250220822" type="Flow" name="Assign" dpName="Assign" dpValue="this.resultText" dpValue2="" dpImage="" tag="" depth="2" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="ed913947-7b6e-4dc5-9cef-2976e95c3a03" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Variable" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.resultText" />
+        <Property type="Flow" key="Conditions_Value" controlType="PropertyItemTextView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.storeName+'을'+this.mention1" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.resultText = this.storeName+'을'+this.mention1;]]></Script>
+    </Step>
+    <Step id="Sf5f2c6f9336d469d99d790d22f453e06" ver="250220822" createVer="250220822" type="Flow" name="Else" dpName="Else" dpValue="" dpValue2="" dpImage="" tag="" depth="2" stmttype="CloseOpenBlock" enabled="True" mainSet="0">
+      <Properties id="75f5c4ba-e618-4c22-8f70-7bea2fc1f35b" type="Flow">
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+      </Properties>
+      <RelatedSteps>
+        <RelatedStep id="S18c0549f314b43978ea4c1eaa954eaba" type="Flow" name="Decision" />
+      </RelatedSteps>
+      <Script><![CDATA[}else{]]></Script>
+    </Step>
+    <Step id="Scff657e4d0344d2b8902622cdd8ea505" ver="250220822" createVer="250220822" type="Flow" name="Assign" dpName="Assign" dpValue="this.resultText" dpValue2="" dpImage="" tag="" depth="2" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="4756e837-2558-4d66-a7f8-d1549d18408c" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Variable" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.resultText" />
+        <Property type="Flow" key="Conditions_Value" controlType="PropertyItemTextView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.storeName+'를'+this.mention1" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.resultText = this.storeName+'를'+this.mention1;]]></Script>
+    </Step>
+    <Step id="S250567bf1ad3480f94d092269e0c13a0" ver="250220822" createVer="250220822" type="Flow" name="EndDecision" dpName="End-IfElse" dpValue="" dpValue2="" dpImage="" tag="" depth="2" stmttype="CloseBlock" enabled="True" mainSet="0">
+      <Properties id="7a5da5df-a0c0-4101-a720-ee1ab280e6b0" type="Flow">
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+      </Properties>
+      <RelatedSteps>
+        <RelatedStep id="S18c0549f314b43978ea4c1eaa954eaba" type="Flow" name="Decision" />
+      </RelatedSteps>
+      <Script><![CDATA[}]]></Script>
+    </Step>
+    <Step id="S4f6f3c935fa64d5fa85c132fbb027ee6" ver="250220822" createVer="250220822" type="Desktop" name="InputBox" dpName="InputBox" dpValue="this.foodName" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="9c309139-434e-4e96-b9d9-e5cd9dcea415" type="Desktop">
+        <Property type="Desktop" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Desktop" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Desktop" key="Conditions_Variable" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.foodName" />
+        <Property type="Desktop" key="Conditions_PromptType" controlType="PropertyItemDropDownView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="Text" valuelist="OK;OK/Cancel;Yes/No;Yes/No/Cancel;Abort/Retry/Ignore;Retry/Cancel;Text" />
+        <Property type="Desktop" key="Conditions_DefaultValue" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="''" />
+        <Property type="Desktop" key="Conditions_DefaultItem" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="''" />
+        <Property type="Desktop" key="Conditions_PromptMessage" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="'맛있게 드신 음식 이름을 써주세요'" />
+        <Property type="Desktop" key="Conditions_TimeoutSec" controlType="Int32" valueType="System.Int32" formatType="Integer" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="600" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.foodName = InputBox('','Text', '맛있게 드신 음식 이름을 써주세요', 600);]]></Script>
+    </Step>
+    <Step id="Sb6bd6d45f3364749a6f3aaa66e75d4ae" ver="250220822" createVer="250220822" type="Flow" name="CustomLibrary" dpName="CustomLibrary" dpValue="RESULT" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="32c754cc-ac69-4da0-9131-d6f0d3ffb9cb" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_LibraryScope" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="Project" />
+        <Property type="Flow" key="Conditions_LibraryNamespace" controlType="String" valueType="System.String" formatType="String" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="JavaScript" />
+        <Property type="Flow" key="Conditions_LibraryName" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="C_ConsonantCheck" />
+        <Property type="Flow" key="Conditions_LibraryType" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="JavaScript" />
+        <Property type="Flow" key="Conditions_Result" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="RESULT" />
+        <Property type="Flow" key="Arguments_value" controlType="Object" valueType="System.Object" formatType="Any" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.foodName" order="1" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[RESULT = Script.JavaScript.C_ConsonantCheck(this.foodName);]]></Script>
+    </Step>
+    <Step id="S79da36c2dfc14a42ad9f72932f0a1689" ver="250220822" createVer="250220822" type="Flow" name="Decision" dpName="IfElse" dpValue="RESULT == true" dpValue2="" dpImage="" tag="" depth="1" stmttype="OpenBlock" enabled="True" mainSet="0">
+      <Properties id="38f3d966-73da-40c7-b44a-2effa05aae75" type="Flow">
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Expression" controlType="PropertyItemTextEditorView" valueType="System.Object" formatType="Condition" required="True" visible="False" readonly="True" encrypted="False" isChanged="N" value="RESULT == true" order="1" />
+        <Property type="Flow" key="Conditions_CombineCondition" controlType="PropertyItemCombineConditionView" valueType="System.Boolean" formatType="Boolean" required="False" visible="False" readonly="False" encrypted="False" isChanged="N" value="True" order="2" />
+        <Property type="Flow" key="Conditions_Expression1" controlType="PropertyItemExpressionView" valueType="System.Object" formatType="Condition" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="RESULT == true" order="3" />
+        <Property type="Flow" key="Conditions_AddCondition" controlType="PropertyItemAddConditionView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+      </Properties>
+      <RelatedSteps>
+        <RelatedStep id="S90a79826fb4b4e3e9c571dc8af16cc07" type="Flow" name="Else" />
+        <RelatedStep id="S77142eca6ad1448d90240b75eb1861e3" type="Flow" name="EndDecision" />
+      </RelatedSteps>
+      <Script><![CDATA[if (RESULT == true) {]]></Script>
+    </Step>
+    <Step id="S9510c5010c2a444f8adbfca44c4533ff" ver="250220822" createVer="250220822" type="Flow" name="Assign" dpName="Assign" dpValue="this.resultText" dpValue2="" dpImage="" tag="" depth="2" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="ed913947-7b6e-4dc5-9cef-2976e95c3a03" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Variable" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.resultText" />
+        <Property type="Flow" key="Conditions_Value" controlType="PropertyItemTextView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.resultText+this.foodName+'은'+this.mention2" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.resultText = this.resultText+this.foodName+'은'+this.mention2;]]></Script>
+    </Step>
+    <Step id="S90a79826fb4b4e3e9c571dc8af16cc07" ver="250220822" createVer="250220822" type="Flow" name="Else" dpName="Else" dpValue="" dpValue2="" dpImage="" tag="" depth="2" stmttype="CloseOpenBlock" enabled="True" mainSet="0">
+      <Properties id="75f5c4ba-e618-4c22-8f70-7bea2fc1f35b" type="Flow">
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+      </Properties>
+      <RelatedSteps>
+        <RelatedStep id="S79da36c2dfc14a42ad9f72932f0a1689" type="Flow" name="Decision" />
+      </RelatedSteps>
+      <Script><![CDATA[}else{]]></Script>
+    </Step>
+    <Step id="S15be19018d4f4d289916ac763180259b" ver="250220822" createVer="250220822" type="Flow" name="Assign" dpName="Assign" dpValue="this.resultText" dpValue2="" dpImage="" tag="" depth="2" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="4756e837-2558-4d66-a7f8-d1549d18408c" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_Variable" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.resultText" />
+        <Property type="Flow" key="Conditions_Value" controlType="PropertyItemTextView" valueType="System.String" formatType="String" required="True" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.resultText+this.foodName+'는'+this.mention2" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[this.resultText = this.resultText+this.foodName+'는'+this.mention2;]]></Script>
+    </Step>
+    <Step id="S77142eca6ad1448d90240b75eb1861e3" ver="250220822" createVer="250220822" type="Flow" name="EndDecision" dpName="End-IfElse" dpValue="" dpValue2="" dpImage="" tag="" depth="2" stmttype="CloseBlock" enabled="True" mainSet="0">
+      <Properties id="7a5da5df-a0c0-4101-a720-ee1ab280e6b0" type="Flow">
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+      </Properties>
+      <RelatedSteps>
+        <RelatedStep id="S79da36c2dfc14a42ad9f72932f0a1689" type="Flow" name="Decision" />
+      </RelatedSteps>
+      <Script><![CDATA[}]]></Script>
+    </Step>
+    <Step id="S66fee002a390401baeecb394c93e641f" ver="250220822" createVer="250220822" type="Desktop" name="MessageBox" dpName="MessageBox" dpValue="this.resultText" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="b14750ff-da67-46c7-97e1-9f00d9570151" type="Desktop">
+        <Property type="Desktop" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Desktop" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Desktop" key="Conditions_Arguments" controlType="Object" valueType="System.Object" formatType="Any" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.resultText" />
+        <Property type="Desktop" key="Command_Timeout" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[MsgBox(this.resultText);]]></Script>
+    </Step>
+  </Steps>
+  <Libraries>
+    <string>FlowControl</string>
+    <string>System</string>
+  </Libraries>
+  <JScript><![CDATA[function MyProcess() {
+
+    this.foodName;
+    this.storeName;
+    this.resultText;
+    this.mention1Arr;
+    this.mention1;
+    this.mention2;
+    this.mention2Arr;
+
+    this.run = function() {
+
+        //------------------------------------------------
+        STEP('S5c7a2542f02842198de6409ace1c76ea', '[1] Assign');
+        this.mention1Arr = [' 이용해 주셔서 감사합니다. ', ' 사랑해주셔서 감사합니다. ', ' 고객을 위해 정성을 다합니다. '];
+
+        //------------------------------------------------
+        STEP('S34ca831e6c914188a90c03e5f1c9ae2b', '[2] CustomLibrary');
+        RESULT = Script.JavaScript.C_Random(this.mention1Arr);
+
+        //------------------------------------------------
+        STEP('S777d27cee2954f61b9f66d88103abba3', '[3] Assign');
+        this.mention1 = this.mention1Arr[RESULT];
+
+        //------------------------------------------------
+        STEP('S39e3e4ae839f4bdc91af03599d2f45b8', '[4] Assign');
+        this.mention2Arr = [' 저희 가게에서 가장 인기있는 메뉴입니다. 다음에도 또 이용해주시면 감사하겠습니다', ' 매력에 빠지면 헤어나오기 힘든 별미 중의 별미입니다! 생각나면 다시 들러주세요!!'];
+
+        //------------------------------------------------
+        STEP('S266a493e05504d84a07e69ebc5a07b94', '[5] CustomLibrary');
+        RESULT = Script.JavaScript.C_Random(this.mention2Arr);
+
+        //------------------------------------------------
+        STEP('S64369564ff7f43499646f393416add4d', '[6] Assign');
+        this.mention2 = this.mention2Arr[RESULT];
+
+        //------------------------------------------------
+        STEP('S3dc317fabc6f4680bc787391571f25e5', '[7] InputBox');
+        this.storeName = InputBox('','Text', '음식점 상호명을 써주세요', 600);
+
+        //------------------------------------------------
+        STEP('Saea29c56dc08402c8e4de5c01fed70bf', '[8] CustomLibrary');
+        RESULT = Script.JavaScript.C_ConsonantCheck(this.storeName);
+
+        //------------------------------------------------
+        STEP('S18c0549f314b43978ea4c1eaa954eaba', '[9] IfElse');
+        if (RESULT == true) {
+
+            //------------------------------------------------
+            STEP('Sc5042bd0d96d44db9849294eaf1d3172', '[10] Assign');
+            this.resultText = this.storeName+'을'+this.mention1;
+
+        //------------------------------------------------
+        }else{
+            STEP('Sf5f2c6f9336d469d99d790d22f453e06', '[11] Else');
+
+            //------------------------------------------------
+            STEP('Scff657e4d0344d2b8902622cdd8ea505', '[12] Assign');
+            this.resultText = this.storeName+'를'+this.mention1;
+
+        //------------------------------------------------
+        }
+        STEP('S250567bf1ad3480f94d092269e0c13a0', '[13] End-IfElse');
+
+        //------------------------------------------------
+        STEP('S4f6f3c935fa64d5fa85c132fbb027ee6', '[14] InputBox');
+        this.foodName = InputBox('','Text', '맛있게 드신 음식 이름을 써주세요', 600);
+
+        //------------------------------------------------
+        STEP('Sb6bd6d45f3364749a6f3aaa66e75d4ae', '[15] CustomLibrary');
+        RESULT = Script.JavaScript.C_ConsonantCheck(this.foodName);
+
+        //------------------------------------------------
+        STEP('S79da36c2dfc14a42ad9f72932f0a1689', '[16] IfElse');
+        if (RESULT == true) {
+
+            //------------------------------------------------
+            STEP('S9510c5010c2a444f8adbfca44c4533ff', '[17] Assign');
+            this.resultText = this.resultText+this.foodName+'은'+this.mention2;
+
+        //------------------------------------------------
+        }else{
+            STEP('S90a79826fb4b4e3e9c571dc8af16cc07', '[18] Else');
+
+            //------------------------------------------------
+            STEP('S15be19018d4f4d289916ac763180259b', '[19] Assign');
+            this.resultText = this.resultText+this.foodName+'는'+this.mention2;
+
+        //------------------------------------------------
+        }
+        STEP('S77142eca6ad1448d90240b75eb1861e3', '[20] End-IfElse');
+
+        //------------------------------------------------
+        STEP('S66fee002a390401baeecb394c93e641f', '[21] MessageBox');
+        MsgBox(this.resultText);
+
+
+    }
+
+    this.execute = function() {
+        var result = null;
+        result = this.run()
+        if (result != null)
+            return result;
+    }
+}
+]]></JScript>
+  <Diagram version="1.300" nodesize="Normal">
+    <StepNodes>
+      <StepNode step_id="S5c7a2542f02842198de6409ace1c76ea" group_name="7f184202-7ac1-40da-8cda-7519ddb9e77f_Untitled" folded="False" />
+      <StepNode step_id="S34ca831e6c914188a90c03e5f1c9ae2b" group_name="7f184202-7ac1-40da-8cda-7519ddb9e77f_Untitled" folded="False" />
+      <StepNode step_id="S777d27cee2954f61b9f66d88103abba3" group_name="7f184202-7ac1-40da-8cda-7519ddb9e77f_Untitled" folded="False" />
+      <StepNode step_id="S39e3e4ae839f4bdc91af03599d2f45b8" group_name="17472d2f-8809-479f-94d0-a84e52aa81c4_Untitled" folded="False" />
+      <StepNode step_id="S266a493e05504d84a07e69ebc5a07b94" group_name="17472d2f-8809-479f-94d0-a84e52aa81c4_Untitled" folded="False" />
+      <StepNode step_id="S64369564ff7f43499646f393416add4d" group_name="17472d2f-8809-479f-94d0-a84e52aa81c4_Untitled" folded="False" />
+      <StepNode step_id="S3dc317fabc6f4680bc787391571f25e5" group_name="63e58088-fe21-42e9-b885-9f206b31965b_Untitled" folded="False" />
+      <StepNode step_id="Saea29c56dc08402c8e4de5c01fed70bf" group_name="63e58088-fe21-42e9-b885-9f206b31965b_Untitled" folded="False" />
+      <StepNode step_id="S18c0549f314b43978ea4c1eaa954eaba" group_name="" folded="False" />
+      <StepNode step_id="Sc5042bd0d96d44db9849294eaf1d3172" group_name="1d2305a9-93b0-4b19-b465-5eae7ce96fad_Untitled" folded="False" />
+      <StepNode step_id="Sf5f2c6f9336d469d99d790d22f453e06" group_name="" folded="False" />
+      <StepNode step_id="Scff657e4d0344d2b8902622cdd8ea505" group_name="74d345dc-e9f3-4d5e-a6fb-aa125b91b62f_Untitled" folded="False" />
+      <StepNode step_id="S250567bf1ad3480f94d092269e0c13a0" group_name="" folded="False" />
+      <StepNode step_id="S4f6f3c935fa64d5fa85c132fbb027ee6" group_name="47d546f6-8b8b-4760-8bf2-35b098c0934f_Untitled" folded="False" />
+      <StepNode step_id="Sb6bd6d45f3364749a6f3aaa66e75d4ae" group_name="47d546f6-8b8b-4760-8bf2-35b098c0934f_Untitled" folded="False" />
+      <StepNode step_id="S79da36c2dfc14a42ad9f72932f0a1689" group_name="" folded="False" />
+      <StepNode step_id="S9510c5010c2a444f8adbfca44c4533ff" group_name="43f2eced-f466-4d72-9bf3-7aae4e8f1d50_Untitled" folded="False" />
+      <StepNode step_id="S90a79826fb4b4e3e9c571dc8af16cc07" group_name="" folded="False" />
+      <StepNode step_id="S15be19018d4f4d289916ac763180259b" group_name="c4a266a3-947e-4c0e-b03f-183102b28074_Untitled" folded="False" />
+      <StepNode step_id="S77142eca6ad1448d90240b75eb1861e3" group_name="" folded="False" />
+      <StepNode step_id="S66fee002a390401baeecb394c93e641f" group_name="8f5701e0-c0ad-4336-b4c9-739cef5efdaf_Untitled" folded="False" />
+    </StepNodes>
+  </Diagram>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>M2hZwAp3z/hsaIuHLiBTpt8bIok=</DigestValue></Reference></SignedInfo><SignatureValue>OJ3Pau+A7Kbg+kuHOC+dFn24bkrAqY1vTMveYjgOcX9cVwgMx/ir78HzkBDOu+whelaHHPrQCo83Kjm26r88Rsuxo/g5qTTyluDvh3q5Wq+0T+gdDnSaWnJiuIUvURgVedmUl/vSTfqhA7CMohgG0+BgvTwB3Q/XuYY2RAotDscyHeEUSF3bFgeeiKoiTJrKJHehWurxxG9S49cZ+MbLUZxwKHy94t1xexmJfvnRhMdPTLSxPwQNbN/1kXkRx3PgZRp3tBNjsYEkfcvXXzV0esU4033oZLCVg7QKQqJW0SzsvKi4R8nagcIyWD9jFbmBewcSU5sHYbaIEQ7OFiTbPQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=DESIGNER-K38M3, O=bwrpa.samsungsds.com, OU=IPA_DESIGNER, L="", S="", C=""</X509SubjectName></X509Data></KeyInfo></Signature></Process>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Result id="789c9201-6b18-40d7-a97d-f5dab165e348" name="MyProcess" result="Fail" detail="TypeError: Cannot read property 'charCodeAt' of undefined&#xA;&#xA;Recent Warning Messages =&gt;&#xA;[CATCH_STEP_EXCEPTION] Process: MyProcess&#xA;Step: CustomLibrary (2/15)&#xA;&#xA;TypeError: Cannot read property 'charCodeAt' of undefined" start="2023-01-03T06:28:40.251" end="2023-01-03T06:28:55.356" jobId="Designer_20230103_152833_632">
+  <Step id="S3dc317fabc6f4680bc787391571f25e5" taskName="MyProcess" type="Desktop" name="InputBox" displayName="InputBox" callDepth="1" depth="1" num="1" result="Pass" start="2023-01-03T06:28:40.327" end="2023-01-03T06:28:47.346" displayTime="7s">
+    <Variables>
+      <Variable name="storeName" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.storeName : '신전떡볶이'" runtimeType="String" key="Conditions_Variable" displayKey="Variable" visible="true" required="true" />
+      <Property value="Text" runtimeType="String" key="Conditions_PromptType" displayKey="Prompt Type" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Conditions_DefaultValue" displayKey="Default Value" visible="true" required="false" />
+      <Property value="''" runtimeType="String" key="Conditions_DefaultItem" displayKey="Default Value" visible="false" required="false" />
+      <Property value="'음식점 상호명을 써주세요'" runtimeType="String" key="Conditions_PromptMessage" displayKey="Guide Message" visible="true" required="false" />
+      <Property value="600" runtimeType="Integer" key="Conditions_TimeoutSec" displayKey="Timeout(Sec)" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Saea29c56dc08402c8e4de5c01fed70bf" taskName="MyProcess" type="Flow" name="CustomLibrary" displayName="C_ConsonantCheck" callDepth="1" depth="1" num="2" result="Fail" detail="[CATCH_STEP_EXCEPTION] Process: MyProcess&#xA;Step: CustomLibrary (2/15)&#xA;&#xA;TypeError: Cannot read property 'charCodeAt' of undefined&#xA;TypeError: Cannot read property 'charCodeAt' of undefined" start="2023-01-03T06:28:47.373" end="2023-01-03T06:28:55.354" displayTime="8s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;null&gt;" />
+      <Variable name="foodName" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="Project" runtimeType="String" key="Conditions_LibraryScope" displayKey="LibraryScope" visible="false" required="false" />
+      <Property value="JavaScript" runtimeType="String" key="Conditions_LibraryNamespace" displayKey="LibraryNamespace" visible="false" required="false" />
+      <Property value="C_ConsonantCheck" runtimeType="String" key="Conditions_LibraryName" displayKey="Library" visible="true" required="false" />
+      <Property value="JavaScript" runtimeType="String" key="Conditions_LibraryType" displayKey="LibraryType" visible="true" required="false" />
+      <Property value="RESULT : " runtimeType="Any" key="Conditions_Result" displayKey="Result" visible="true" required="false" />
+      <Property value="&lt;undefined&gt;" runtimeType="Undefined" key="Arguments_value" displayKey="value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <JobInfo>
+    <Info name="Bot Version" value="2.5.000.00921" />
+    <Info name="Resolution" value="1920x1080" />
+  </JobInfo>
+</Result>

@@ -1,0 +1,42 @@
+<Project id="65145748-818f-475b-ad91-08a9bde9e170" namespace="" name="reviewGenerator_test" desc="음식점의 리뷰를 자동생성하는 연습입니다.&#xD;&#xA;을/를 은/는 을 구별하기 위해 커스텀 라이브러리를 사용합니다." category="project" workType="foreground" version="1.00" lastPublishedDate="" lastPublishedBy="" createdDate="2023-01-03 15:17:54" createdBy="" latestProcess="MyProcess" designerVersion="2.5.000.00921">
+  <SharedTask isExpended="false" />
+  <NormalTask isExpended="false" />
+  <Event isExpended="false" />
+  <Process isExpended="false">
+    <LinkItem id="789c9201-6b18-40d7-a97d-f5dab165e348" category="Process" isChanged="Y" desc="default process" stepCount="21" name="MyProcess">
+      <Properties />
+    </LinkItem>
+  </Process>
+  <CustomLibraries isExpended="true">
+    <LinkItem id="1ed6c7bf-4684-480c-9a88-1c7ea6eccc85" category="CustomLibrary" subCategory="JavaScript" externalLibrary="" isChanged="Y" desc="" stepCount="" name="C_ConsonantCheck">
+      <Properties />
+    </LinkItem>
+    <LinkItem id="b565829f-ce05-4114-9882-63bd606ccd12" category="CustomLibrary" subCategory="JavaScript" externalLibrary="" isChanged="Y" desc="" stepCount="" name="C_Random">
+      <Properties />
+    </LinkItem>
+  </CustomLibraries>
+  <LibraryTemplate isExpended="false" />
+  <Resources isExpended="false" />
+  <RemoteProcess isExpended="false" />
+  <Asset />
+  <Library />
+  <Variables />
+  <Properties />
+  <Libraries>
+    <string>FlowControl</string>
+    <string>System</string>
+  </Libraries>
+  <DisplayLibraries>
+    <string>Flow</string>
+    <string>Win</string>
+    <string>Net</string>
+    <string>Excel</string>
+    <string>Desktop</string>
+    <string>Chrome</string>
+    <string>ImageRecognition</string>
+    <string>DataConverter</string>
+    <string>Pdf</string>
+    <string>NativeApp</string>
+    <string>Abbyy</string>
+  </DisplayLibraries>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>qKPiL2ambSLxcWmXIbqhOoWKYMg=</DigestValue></Reference></SignedInfo><SignatureValue>fJwM68RwJLwRj3KIFVoVrmtlmjlEvumhl8ldsQ4qSZqvOYVdi9pDe3UfI0zTmw4/vnM9uEVKKdfrQN3gJLUtBxMHRoZFaGAAtGCIfvglijIw0hg7evxREaEJ8EBUSA24ys5NBeAegSEXE+qWW83pOLKNJJmG0nF4rbVLFdldbxMLugNVb4NAjpImM798dnlOcgOzSA0PsOe8uuZMdojhSyKMXWGhX4rGymodcL5rdmIPhg3dRSbJmi1LJy5yloEWR5pZ06ulp07Dng6jmKBhbH/eGt0MFad8NCZTSLH+f8T8tcbdZqPhdvtOIlO8VujOlerI/7Xwd0shqyxzY2QRqA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=DESIGNER-K38M3, O=bwrpa.samsungsds.com, OU=IPA_DESIGNER, L="", S="", C=""</X509SubjectName></X509Data></KeyInfo></Signature></Project>

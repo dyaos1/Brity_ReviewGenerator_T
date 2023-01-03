@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Result id="789c9201-6b18-40d7-a97d-f5dab165e348" name="MyProcess" result="Pass" start="2023-01-03T06:35:23.922" end="2023-01-03T06:35:37.264" jobId="Designer_20230103_153521_982">
+  <Step id="S3dc317fabc6f4680bc787391571f25e5" taskName="MyProcess" type="Desktop" name="InputBox" displayName="InputBox" callDepth="1" depth="1" num="1" result="Pass" start="2023-01-03T06:35:23.998" end="2023-01-03T06:35:30.826" displayTime="6.8s">
+    <Variables>
+      <Variable name="storeName" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.storeName : '광양불고기'" runtimeType="String" key="Conditions_Variable" displayKey="Variable" visible="true" required="true" />
+      <Property value="Text" runtimeType="String" key="Conditions_PromptType" displayKey="Prompt Type" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Conditions_DefaultValue" displayKey="Default Value" visible="true" required="false" />
+      <Property value="''" runtimeType="String" key="Conditions_DefaultItem" displayKey="Default Value" visible="false" required="false" />
+      <Property value="'음식점 상호명을 써주세요'" runtimeType="String" key="Conditions_PromptMessage" displayKey="Guide Message" visible="true" required="false" />
+      <Property value="600" runtimeType="Integer" key="Conditions_TimeoutSec" displayKey="Timeout(Sec)" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Saea29c56dc08402c8e4de5c01fed70bf" taskName="MyProcess" type="Flow" name="CustomLibrary" displayName="C_ConsonantCheck" callDepth="1" depth="1" num="2" result="Pass" start="2023-01-03T06:35:30.841" end="2023-01-03T06:35:30.850" displayTime="0s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Any" value="&lt;null&gt;" />
+      <Variable name="storeName" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'광양불고기'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="Project" runtimeType="String" key="Conditions_LibraryScope" displayKey="LibraryScope" visible="false" required="false" />
+      <Property value="JavaScript" runtimeType="String" key="Conditions_LibraryNamespace" displayKey="LibraryNamespace" visible="false" required="false" />
+      <Property value="C_ConsonantCheck" runtimeType="String" key="Conditions_LibraryName" displayKey="Library" visible="true" required="false" />
+      <Property value="JavaScript" runtimeType="String" key="Conditions_LibraryType" displayKey="LibraryType" visible="true" required="false" />
+      <Property value="RESULT : False" runtimeType="Boolean" key="Conditions_Result" displayKey="Result" visible="true" required="false" />
+      <Property value="'광양불고기'" runtimeType="String" key="Arguments_value" displayKey="value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S18c0549f314b43978ea4c1eaa954eaba" taskName="MyProcess" type="Flow" name="Decision" displayName="IfElse" callDepth="1" depth="1" num="3" result="Pass" start="2023-01-03T06:35:30.860" end="2023-01-03T06:35:30.861" displayTime="0s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Boolean" value="False" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="RESULT == true" runtimeType="String" key="Conditions_Expression" displayKey="If Condition" visible="false" required="true" />
+      <Property value="True" runtimeType="Boolean" key="Conditions_CombineCondition" displayKey="Combine Condition" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Conditions_Expression1" displayKey="Condition" visible="true" required="true" />
+      <Property value="" runtimeType="String" key="Conditions_AddCondition" displayKey="Add Condition" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sf5f2c6f9336d469d99d790d22f453e06" taskName="MyProcess" type="Flow" name="Else" displayName="Else" callDepth="1" depth="2" num="5" result="Pass" start="2023-01-03T06:35:30.875" end="2023-01-03T06:35:30.876" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Scff657e4d0344d2b8902622cdd8ea505" taskName="MyProcess" type="Flow" name="Assign" displayName="Assign" callDepth="1" depth="2" num="6" result="Pass" start="2023-01-03T06:35:30.890" end="2023-01-03T06:35:30.894" displayTime="0s">
+    <Variables>
+      <Variable name="storeName" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'광양불고기'" />
+      <Variable name="resultText" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.resultText : '광양불고기를 이용해 주셔서 감사합니다. '" runtimeType="String" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'광양불고기를 이용해 주셔서 감사합니다. '" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S250567bf1ad3480f94d092269e0c13a0" taskName="MyProcess" type="Flow" name="EndDecision" displayName="End-IfElse" callDepth="1" depth="2" num="7" result="Pass" start="2023-01-03T06:35:30.906" end="2023-01-03T06:35:30.906" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S4f6f3c935fa64d5fa85c132fbb027ee6" taskName="MyProcess" type="Desktop" name="InputBox" displayName="InputBox" callDepth="1" depth="1" num="8" result="Pass" start="2023-01-03T06:35:30.922" end="2023-01-03T06:35:34.247" displayTime="3.3s">
+    <Variables>
+      <Variable name="foodName" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.foodName : '불고기'" runtimeType="String" key="Conditions_Variable" displayKey="Variable" visible="true" required="true" />
+      <Property value="Text" runtimeType="String" key="Conditions_PromptType" displayKey="Prompt Type" visible="true" required="true" />
+      <Property value="''" runtimeType="String" key="Conditions_DefaultValue" displayKey="Default Value" visible="true" required="false" />
+      <Property value="''" runtimeType="String" key="Conditions_DefaultItem" displayKey="Default Value" visible="false" required="false" />
+      <Property value="'맛있게 드신 음식 이름을 써주세요'" runtimeType="String" key="Conditions_PromptMessage" displayKey="Guide Message" visible="true" required="false" />
+      <Property value="600" runtimeType="Integer" key="Conditions_TimeoutSec" displayKey="Timeout(Sec)" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="Sb6bd6d45f3364749a6f3aaa66e75d4ae" taskName="MyProcess" type="Flow" name="CustomLibrary" displayName="C_ConsonantCheck" callDepth="1" depth="1" num="9" result="Pass" start="2023-01-03T06:35:34.252" end="2023-01-03T06:35:34.257" displayTime="0s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Boolean" value="False" />
+      <Variable name="foodName" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'불고기'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="Project" runtimeType="String" key="Conditions_LibraryScope" displayKey="LibraryScope" visible="false" required="false" />
+      <Property value="JavaScript" runtimeType="String" key="Conditions_LibraryNamespace" displayKey="LibraryNamespace" visible="false" required="false" />
+      <Property value="C_ConsonantCheck" runtimeType="String" key="Conditions_LibraryName" displayKey="Library" visible="true" required="false" />
+      <Property value="JavaScript" runtimeType="String" key="Conditions_LibraryType" displayKey="LibraryType" visible="true" required="false" />
+      <Property value="RESULT : False" runtimeType="Boolean" key="Conditions_Result" displayKey="Result" visible="true" required="false" />
+      <Property value="'불고기'" runtimeType="String" key="Arguments_value" displayKey="value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S79da36c2dfc14a42ad9f72932f0a1689" taskName="MyProcess" type="Flow" name="Decision" displayName="IfElse" callDepth="1" depth="1" num="10" result="Pass" start="2023-01-03T06:35:34.260" end="2023-01-03T06:35:34.262" displayTime="0s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Boolean" value="False" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="RESULT == true" runtimeType="String" key="Conditions_Expression" displayKey="If Condition" visible="false" required="true" />
+      <Property value="True" runtimeType="Boolean" key="Conditions_CombineCondition" displayKey="Combine Condition" visible="false" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Conditions_Expression1" displayKey="Condition" visible="true" required="true" />
+      <Property value="" runtimeType="String" key="Conditions_AddCondition" displayKey="Add Condition" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S90a79826fb4b4e3e9c571dc8af16cc07" taskName="MyProcess" type="Flow" name="Else" displayName="Else" callDepth="1" depth="2" num="12" result="Pass" start="2023-01-03T06:35:34.264" end="2023-01-03T06:35:34.264" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S15be19018d4f4d289916ac763180259b" taskName="MyProcess" type="Flow" name="Assign" displayName="Assign" callDepth="1" depth="2" num="13" result="Pass" start="2023-01-03T06:35:34.271" end="2023-01-03T06:35:34.275" displayTime="0s">
+    <Variables>
+      <Variable name="foodName" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'불고기'" />
+      <Variable name="resultText" scope="Normal" owner="MyProcess" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'광양불고기를 이용해 주셔서 감사합니다. '" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.resultText : '광양불고기를 이용해 주셔서 감사합니다. 불고기는 저희 가게에서 가장 인기있는 메뉴입니다.'" runtimeType="String" key="Conditions_Variable" displayKey="Variable" visible="true" required="false" />
+      <Property value="'광양불고기를 이용해 주셔서 감사합니다. 불고기는 저희 가게에서 가장 인기있는 메뉴입니다.'" runtimeType="String" key="Conditions_Value" displayKey="Value" visible="true" required="true" />
+    </Properties>
+  </Step>
+  <Step id="S77142eca6ad1448d90240b75eb1861e3" taskName="MyProcess" type="Flow" name="EndDecision" displayName="End-IfElse" callDepth="1" depth="2" num="14" result="Pass" start="2023-01-03T06:35:34.288" end="2023-01-03T06:35:34.289" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S66fee002a390401baeecb394c93e641f" taskName="MyProcess" type="Desktop" name="MessageBox" displayName="MessageBox" callDepth="1" depth="1" num="15" result="Pass" start="2023-01-03T06:35:34.303" end="2023-01-03T06:35:37.263" displayTime="3s">
+    <Variables>
+      <Variable name="RESULT" scope="System" declareType="Any" isChanged="false" isChangable="true" runtimeType="Boolean" value="False" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="False" runtimeType="Boolean" key="Conditions_Arguments" displayKey="Arguments" visible="true" required="false" />
+      <Property value="&lt;undefined&gt;" runtimeType="Undefined" key="Command_Timeout" displayKey="Timeout (Sec)" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <JobInfo>
+    <Info name="Bot Version" value="2.5.000.00921" />
+    <Info name="Resolution" value="1920x1080" />
+  </JobInfo>
+</Result>

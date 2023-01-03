@@ -1,0 +1,452 @@
+﻿2023-01-03 15:48:33,889 [T1] INFO  EngineStarter
+BOT Engine Start - v2.5.000.00921
+BOT ID: D_20230103_154832_906
+BOT PID: 3308
+BOT PPID: 8400
+BOT Working Directory: C:\Users\k\AppData\Roaming\Brity RPA Designer
+
+2023-01-03 15:48:34,196 [T1] INFO  Config
+Initialize Config
+
+2023-01-03 15:48:34,239 [T1] DEBUG Config
+Config Loaded
+
+2023-01-03 15:48:34,245 [T1] INFO  Config
+Orchestrator Service => https://bwrpa.samsungsds.com:8777
+
+2023-01-03 15:48:34,249 [T1] INFO  Config
+Initialize Resource Config
+
+2023-01-03 15:48:34,278 [T1] DEBUG Config
+Refresh Language Information
+
+2023-01-03 15:48:34,400 [T1] INFO  Config
+All Config Initialized.
+
+2023-01-03 15:48:34,404 [T1] DEBUG KeyManager
+Initialize KeyManager
+
+2023-01-03 15:48:34,480 [T1] DEBUG KeyManager
+Device ID is initialized.
+
+2023-01-03 15:48:34,534 [T1] INFO  CertLicenseClient
+Initialize certificate.
+
+2023-01-03 15:48:34,537 [T1] DEBUG CertLicenseClient
+Set Security Protocol: Tls12
+
+2023-01-03 15:48:34,559 [T5] DEBUG JobService
+Connect to agent service
+
+2023-01-03 15:48:34,573 [T5] DEBUG JobService
+JobService URL : net.tcp://127.0.0.1:59001/rpa/agent
+
+2023-01-03 15:48:34,573 [T5] DEBUG JobService
+Open connection
+
+2023-01-03 15:48:34,586 [T5] DEBUG JobService
+Register engine to agent
+
+2023-01-03 15:48:34,592 [T5] DEBUG JobService
+Engine is connected to agent service.
+
+2023-01-03 15:48:34,592 [T5] DEBUG JobService
+Owner Process PID: 8400
+
+2023-01-03 15:48:34,595 [T1] DEBUG ApplicationInitializer
+InitMode: Thread
+
+2023-01-03 15:48:34,595 [T5] INFO  JobService
+Start monitoring owner process is terminated.
+
+2023-01-03 15:48:34,605 [T1] INFO  LibraryManager
+Load Libraries - Started
+
+2023-01-03 15:48:36,818 [T1] INFO  ScreenCapture
+Default Screen Capture Bounds: 0,0,1920,1080
+
+2023-01-03 15:48:37,570 [T1] DEBUG LibraryManager
+Load built-in script libraries
+
+2023-01-03 15:48:37,755 [T1] INFO  LibraryManager
+Load Libraries - Completed.
+
+2023-01-03 15:48:37,766 [T1] DEBUG Config
+Refresh Language Information
+
+2023-01-03 15:48:37,767 [T1] DEBUG LibraryManager
+LibraryManager Initialized.
+
+2023-01-03 15:51:38,422 [T13] INFO  JobService
+Start Job: MyProcess (Foreground)
+{
+  "UsePIP": false,
+  "UserID": null,
+  "UserPWD": null,
+  "IsRunning": false,
+  "ResultMessage": null,
+  "JobWorkDir": "C:\\Users\\k\\Documents\\Brity RPA Projects\\reviewGenerator_test\\Histories\\20230103_155138_MyProcess_Designer_20230103_155137_927",
+  "JobLogDir": "C:\\Users\\k\\Documents\\Brity RPA Projects\\reviewGenerator_test\\Histories\\20230103_155138_MyProcess_Designer_20230103_155137_927\\Log",
+  "JobScreenshotDir": "C:\\Users\\k\\Documents\\Brity RPA Projects\\reviewGenerator_test\\Histories\\20230103_155138_MyProcess_Designer_20230103_155137_927\\Log\\Screenshot",
+  "TotalProcessStepCount": 0,
+  "CurrentStepNo": 0,
+  "CurrentStepName": null,
+  "StartTime": "2023-01-03 15:51:38",
+  "EndTime": null,
+  "EngineID": "D_20230103_154832_906",
+  "EnginePID": 0,
+  "JobId": "Designer_20230103_155137_927",
+  "JobType": 1,
+  "UserAuthentication": null,
+  "ProcessPath": "C:\\Users\\k\\Documents\\Brity RPA Projects\\reviewGenerator_test\\MyProcess.proc",
+  "ProcessId": "789c9201-6b18-40d7-a97d-f5dab165e348",
+  "ProcessVer": "",
+  "ProcessArgs": null,
+  "RequesterType": 3,
+  "RequesterId": "designer",
+  "RequesterPID": 8400,
+  "OptionsJsonString": null,
+  "TimeoutSec": 0,
+  "State": 0
+}
+
+2023-01-03 15:51:38,595 [T3] DEBUG JobService
+Waiting library loading...
+
+2023-01-03 15:51:38,597 [T3] DEBUG Config
+Reload User Settings
+
+2023-01-03 15:51:38,600 [T3] INFO  JobService
+Config Loading Completed.
+
+2023-01-03 15:51:38,600 [T3] DEBUG JobService
+Config Loading Time: 4 ms.
+
+2023-01-03 15:51:38,610 [T3] INFO  JobManager
+Create JobManager instance for job MyProcess(Designer_20230103_155137_927)
+
+2023-01-03 15:51:38,619 [T3] INFO  JobRequest
+Job ID : Designer_20230103_155137_927
+Project Path  : C:\Users\k\Documents\Brity RPA Projects\reviewGenerator_test\reviewGenerator_test.proj
+Process Name  : MyProcess
+Engine Mode   : Designer
+Requester Type: DesignerRequester PID : 8400
+
+2023-01-03 15:51:38,619 [T12] INFO  JobRequest
+Start Callback Sender
+
+2023-01-03 15:51:38,619 [T12] DEBUG JobRequest
+Step Callback Interval: 500
+
+2023-01-03 15:51:38,672 [T3] DEBUG ProjectManager
+Set Project Information
+
+2023-01-03 15:51:38,695 [T3] INFO  JobRunner
+Initialize Script Engine
+
+2023-01-03 15:51:38,713 [T9] INFO  JobRequest
+##############################################################
+### STATE: Initializing
+##############################################################
+
+
+2023-01-03 15:51:38,734 [T12] DEBUG JobRequest
+Callback - State: Initializing
+
+
+2023-01-03 15:51:38,940 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtNumber, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Number, Path: )
+
+2023-01-03 15:51:38,940 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtInteger, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Number, Path: )
+
+2023-01-03 15:51:38,941 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtDouble, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Number, Path: )
+
+2023-01-03 15:51:38,941 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtPoint, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Point, Path: )
+
+2023-01-03 15:51:38,941 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtRect, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Rect, Path: )
+
+2023-01-03 15:51:38,947 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtDate, Type:RPAGO.Custom.ExtendLibrary.DataConverter_DateTime, Path: )
+
+2023-01-03 15:51:38,947 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtDateTime, Type:RPAGO.Custom.ExtendLibrary.DataConverter_DateTime, Path: )
+
+2023-01-03 15:51:38,948 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtArray1D, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Array, Path: )
+
+2023-01-03 15:51:38,948 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtArray2D, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Array, Path: )
+
+2023-01-03 15:51:38,948 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtXml, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Xml, Path: )
+
+2023-01-03 15:51:38,948 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtJson, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Json, Path: )
+
+2023-01-03 15:51:38,948 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtString, Type:RPAGO.Custom.ExtendLibrary.DataConverter_String, Path: )
+
+2023-01-03 15:51:38,948 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtString_DateTime, Type:RPAGO.Custom.ExtendLibrary.DataConverter_DateTime, Path: )
+
+2023-01-03 15:51:38,949 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Point, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Point, Path: )
+
+2023-01-03 15:51:38,949 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Rect, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Rect, Path: )
+
+2023-01-03 15:51:38,949 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Xml, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Xml, Path: )
+
+2023-01-03 15:51:38,949 [T9] DEBUG ScriptSupport
+AddHostType (Name:CvtString_Json, Type:RPAGO.Custom.ExtendLibrary.DataConverter_Json, Path: )
+
+2023-01-03 15:51:39,394 [T9] INFO  JobRequest
+##############################################################
+### STATE: Ready
+##############################################################
+
+
+2023-01-03 15:51:39,404 [T12] DEBUG JobRequest
+Callback - State: Ready
+
+
+2023-01-03 15:51:39,407 [T3] INFO  JobRunnerHook
+HotKey Hook Started
+
+2023-01-03 15:51:39,408 [T3] INFO  JobRequest
+##############################################################
+### STATE: Starting
+##############################################################
+
+
+2023-01-03 15:51:39,409 [T9] INFO  JobRunner
+RunProcess start
+
+2023-01-03 15:51:39,411 [T9] INFO  JobRequest
+##############################################################
+### STATE: Running
+##############################################################
+
+
+2023-01-03 15:51:39,411 [T9] INFO  JobRequest
+Last job life cycle state: Running
+
+2023-01-03 15:51:39,420 [T12] DEBUG JobRequest
+Callback - State: Starting
+
+
+2023-01-03 15:51:39,435 [T12] DEBUG JobRequest
+Callback - State: Running
+
+
+2023-01-03 15:51:39,793 [T9] INFO  ScreenCapture
+Initialize DirectX Screen Capture.
+
+2023-01-03 15:51:39,806 [T1] INFO  DirectXScreenCapturePlayer
+DirextX Target Screen Bounds: {X=0,Y=0,Width=1920,Height=1080}
+
+2023-01-03 15:51:39,856 [T1] INFO  DirectXScreenCapturePlayer
+Screen 0 Bounds : {X=0,Y=0,Width=1920,Height=1080}
+
+2023-01-03 15:51:39,868 [T3] DEBUG DirectXScreenCapturePlayer
+try capture screen to check DirectX screen.
+
+2023-01-03 15:51:39,896 [T9] INFO  ScreenCapture
+DirectX Screen Capture Initialized.
+
+2023-01-03 15:51:39,916 [T9] DEBUG JobRunner
+DirectX ScreenCapture Checked.
+
+2023-01-03 15:51:39,946 [T9] INFO  JobRequest
+##############################################################
+### STATE: StartProcess - MyProcess
+##############################################################
+789c9201-6b18-40d7-a97d-f5dab165e348
+MyProcess
+
+
+2023-01-03 15:51:40,016 [T9] INFO  JobRequest
+**************************************************************
+*** TASK: MyProcess
+**************************************************************
+ - STEP 1: S5c7a2542f02842198de6409ace1c76ea (1/21) - (1/21)
+ - [1] Assign
+
+
+2023-01-03 15:51:40,208 [T9] INFO  JobRequest
+ - STEP 2: S34ca831e6c914188a90c03e5f1c9ae2b (2/21) - (2/21)
+ - [2] CustomLibrary
+
+
+2023-01-03 15:51:40,224 [T9] INFO  JobRequest
+ - STEP 3: S777d27cee2954f61b9f66d88103abba3 (3/21) - (3/21)
+ - [3] Assign
+
+
+2023-01-03 15:51:40,239 [T9] INFO  JobRequest
+ - STEP 4: S39e3e4ae839f4bdc91af03599d2f45b8 (4/21) - (4/21)
+ - [4] Assign
+
+
+2023-01-03 15:51:40,255 [T9] INFO  JobRequest
+ - STEP 5: S266a493e05504d84a07e69ebc5a07b94 (5/21) - (5/21)
+ - [5] CustomLibrary
+
+
+2023-01-03 15:51:40,270 [T9] INFO  JobRequest
+ - STEP 6: S64369564ff7f43499646f393416add4d (6/21) - (6/21)
+ - [6] Assign
+
+
+2023-01-03 15:51:40,287 [T9] INFO  JobRequest
+ - STEP 7: S3dc317fabc6f4680bc787391571f25e5 (7/21) - (7/21)
+ - [7] InputBox
+
+
+2023-01-03 15:51:45,803 [T9] INFO  JobRequest
+ - STEP 8: Saea29c56dc08402c8e4de5c01fed70bf (8/21) - (8/21)
+ - [8] CustomLibrary
+
+
+2023-01-03 15:51:45,812 [T9] INFO  JobRequest
+ - STEP 9: S18c0549f314b43978ea4c1eaa954eaba (9/21) - (9/21)
+ - [9] IfElse
+
+
+2023-01-03 15:51:45,833 [T9] INFO  JobRequest
+ - STEP 10: Sf5f2c6f9336d469d99d790d22f453e06 (11/21) - (11/21)
+ - [11] Else
+
+
+2023-01-03 15:51:45,849 [T9] INFO  JobRequest
+ - STEP 11: Scff657e4d0344d2b8902622cdd8ea505 (12/21) - (12/21)
+ - [12] Assign
+
+
+2023-01-03 15:51:45,865 [T9] INFO  JobRequest
+ - STEP 12: S250567bf1ad3480f94d092269e0c13a0 (13/21) - (13/21)
+ - [13] End-IfElse
+
+
+2023-01-03 15:51:45,881 [T9] INFO  JobRequest
+ - STEP 13: S4f6f3c935fa64d5fa85c132fbb027ee6 (14/21) - (14/21)
+ - [14] InputBox
+
+
+2023-01-03 15:51:48,321 [T9] INFO  JobRequest
+ - STEP 14: Sb6bd6d45f3364749a6f3aaa66e75d4ae (15/21) - (15/21)
+ - [15] CustomLibrary
+
+
+2023-01-03 15:51:48,326 [T9] INFO  JobRequest
+ - STEP 15: S79da36c2dfc14a42ad9f72932f0a1689 (16/21) - (16/21)
+ - [16] IfElse
+
+
+2023-01-03 15:51:48,330 [T9] INFO  JobRequest
+ - STEP 16: S90a79826fb4b4e3e9c571dc8af16cc07 (18/21) - (18/21)
+ - [18] Else
+
+
+2023-01-03 15:51:48,333 [T9] INFO  JobRequest
+ - STEP 17: S15be19018d4f4d289916ac763180259b (19/21) - (19/21)
+ - [19] Assign
+
+
+2023-01-03 15:51:48,344 [T9] INFO  JobRequest
+ - STEP 18: S77142eca6ad1448d90240b75eb1861e3 (20/21) - (20/21)
+ - [20] End-IfElse
+
+
+2023-01-03 15:51:48,360 [T9] INFO  JobRequest
+ - STEP 19: S66fee002a390401baeecb394c93e641f (21/21) - (21/21)
+ - [21] MessageBox
+
+
+2023-01-03 15:51:48,431 [T9] INFO  ScriptSupport
+신전떡볶이를 고객을 위해 정성을 다합니다. 크림파스타는undefined
+
+2023-01-03 15:51:53,261 [T9] INFO  JobRunner
+[PASS] TASK: MyProcess
+
+2023-01-03 15:51:53,273 [T9] INFO  JobRequest
+##############################################################
+### STATE: EndProcess - MyProcess
+##############################################################
+789c9201-6b18-40d7-a97d-f5dab165e348
+MyProcess
+
+
+2023-01-03 15:51:53,303 [T9] INFO  JobRunner
+RunProcess - Job Result: {}
+
+2023-01-03 15:51:53,304 [T9] DEBUG JobManager
+Set Result State: Completed
+
+2023-01-03 15:51:53,308 [T11] DEBUG JobRunner
+Start timer for checking the job to be completed.
+
+2023-01-03 15:51:53,309 [T9] DEBUG JobRunner
+OnProcessCompleted
+
+2023-01-03 15:51:53,310 [T9] INFO  JobRunner
+Start to clean up resources.
+
+2023-01-03 15:51:53,315 [T9] DEBUG JobRunner
+Remove all libraries
+
+2023-01-03 15:51:53,365 [T9] DEBUG NetPlayer
+WebPlayer OnDispose
+
+2023-01-03 15:51:53,369 [T9] DEBUG WebPlayer
+WebPlayer OnDispose : Do Nothing
+
+2023-01-03 15:51:53,374 [T9] DEBUG UiaAppHelper
+WinHelper DisposeAppList Count: 0
+
+2023-01-03 15:51:53,375 [T9] INFO  JobRunner
+All Resources Clear
+
+2023-01-03 15:51:53,379 [T9] INFO  JobRunner
+Make report.
+
+2023-01-03 15:51:53,485 [T9] DEBUG JobRunner
+OnCompleted
+
+2023-01-03 15:51:53,486 [T9] DEBUG JobRunner
+SendJobResult: Completed
+
+2023-01-03 15:51:53,486 [T9] INFO  JobRequest
+##############################################################
+### STATE: Completed
+##############################################################
+{}
+
+
+2023-01-03 15:51:53,486 [T9] INFO  JobRequest
+Last job life cycle state: Completed
+
+2023-01-03 15:51:53,510 [T9] INFO  JobRequest
+##############################################################
+### JOB COMPLETED
+##############################################################
+
+
+2023-01-03 15:51:53,511 [T12] DEBUG JobRequest
+Callback - State: Completed
+{}
+
+2023-01-03 15:51:53,511 [T12] INFO  JobRequest
+Callback - JobCompleted
+
+2023-01-03 15:51:53,511 [T12] DEBUG JobRequest
+End of Callback Sender
+
+2023-01-03 15:51:53,526 [T9] INFO  JobRunner
+RunProcess end
+

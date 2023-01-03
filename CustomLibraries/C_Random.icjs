@@ -1,0 +1,27 @@
+﻿/**
+*
+* @libraryType JavaScript
+* @id b565829f-ce05-4114-9882-63bd606ccd12
+* @createdDate 2023-01-03 15:37:40
+* @lastModifiedDate 2023-01-03 15:51:33
+* @createdBy 
+* @lastModifiedBy 
+*
+* @designerVersion 2.5.000.00921
+* @brief 
+*  @brf 랜덤함수입니다
+* @param value<Any> 
+*
+*/
+
+if(Script.JavaScript == undefined || Script.JavaScript == null) {
+	Script.JavaScript = new Object();
+}
+
+if(Script.JavaScript.C_Random == null || Script.JavaScript.C_Random == undefined) {
+	Script.JavaScript.C_Random = function (value) {
+	//Body Begin
+		return Math.floor(Math.random()*value.length);
+	//Body End
+	}
+}
